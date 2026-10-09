@@ -1,0 +1,39 @@
+.box1{
+    background-color: rgb(115, 145, 171);
+    color:black;
+}
+.box2{
+    position:absolute;
+    right: 0px;
+    top:0px;
+    background-color: aquamarine;
+    color: blue;
+}
+.box3{
+    background-color: brown;
+    color: black;
+}
+.box4{
+    background-color: rgb(97, 165, 42);
+    color: black; 
+}
+.box{
+    width:200px;
+    height:100px;
+    border:2px solid black;
+    display:flex;
+    justify-content: center;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    
+}
+.container{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    border:2px solid black;
+}
