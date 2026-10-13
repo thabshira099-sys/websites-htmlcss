@@ -13,6 +13,8 @@ line-height: 28px;
     position: relative;
     overflow:hidden;
     min-height:730px;
+    margin:22px;
+    border-radius:4%;
 }
 .main{
     position:relative;
@@ -23,11 +25,11 @@ line-height: 28px;
     
 }
 .mains{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    border-radius: 15px;
-    background: transparent;
+    padding: 8px 28px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(20px);
+    display:flex;
 }
 
 .profile1{
@@ -35,8 +37,8 @@ line-height: 28px;
     height:100%;
     object-fit: cover;
     position: absolute;
-    inset:0;
-    z-index:0;
+    /* inset:0;
+    z-index:0; */
 }
 nav{
     display:flex;
@@ -108,6 +110,11 @@ nav a{
     background-color:white;
 
 }
+.bttn{
+    flex-direction: row;
+    display:flex;
+    align-items: center;
+}
 .logos{
     position: static;
     display: flex;
@@ -129,9 +136,18 @@ nav a{
     color:white;
     position: relative;
 }
+h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 1.05;
+    color: white;
+}
 header{
 display: flex;
-justify-content: center;
+justify-content:center;
+
+
 }
 .forms{
     position: absolute;
@@ -171,50 +187,76 @@ justify-content: center;
     height:60px;
 
 }
+.reviews {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ratings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .ratings p{
     color:white;
-    display:flex;
-    flex-direction: column;
-    margin:4px;
-    justify-content:center;
+    margin:px;
 }
 .stars{
     color: yellow;
     font-size:23px;
     margin:4px;
+    
 }
 .facebook{
-    width:30px;
-    height:30px;
+    width:60px;
+    height:60px;
     border-radius: 50%;
     object-fit: cover;
 
 }
 .blue{
-    width:30px;
-    height:30px;
+    width:60px;
+    height:60px;
     border-radius: 50%;
     object-fit: cover;
 
 }
 .google{
-    width:30px;
-    height:30px;
+    width:60px;
+    height:60px;
     border-radius: 50%;
     object-fit: cover;
 
 }
 .red{
-    width:30px;
-    height:30px;
+    width:60px;
+    height:60px;
     border-radius: 50%;
     object-fit: cover;
 
 }
 .rate{
-    width:30px;
-    height:30px;
+    width:60px;
+    height:60px;
     border-radius: 50%;
     object-fit: cover;
 
+}
+.reviews{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.review-icons {
+    display: flex;
+    align-items: center;
+}
+.review-icons img {
+    margin-right: -8px;
+    border: 2px solid white;
+    position: relative;
 }
