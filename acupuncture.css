@@ -8,13 +8,13 @@ font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-size: 16px;
 font-weight: 400;
 line-height: 28px;
+background-color:rgb(227, 227, 227);
 }
 .background{
     position: relative;
-    overflow:hidden;
-    min-height:730px;
-    margin:22px;
-    border-radius:4%;
+    overflow: visible;
+    height: 730px;
+    margin: 20px;
 }
 .main{
     position:relative;
@@ -23,6 +23,7 @@ line-height: 28px;
     width:100%;
     z-index: 1;
     
+    
 }
 .mains{
     padding: 8px 28px;
@@ -30,6 +31,8 @@ line-height: 28px;
     background: rgba(255, 255, 255, 0.18);
     backdrop-filter: blur(20px);
     display:flex;
+    justify-content: center;
+    gap:18px;
 }
 
 .profile1{
@@ -37,8 +40,7 @@ line-height: 28px;
     height:100%;
     object-fit: cover;
     position: absolute;
-    /* inset:0;
-    z-index:0; */
+    border-radius: 22px;
 }
 nav{
     display:flex;
@@ -52,6 +54,7 @@ nav a{
     flex-direction: column;
     text-decoration: none;
 }
+
 .buttons button{
     display: flex;
     align-items:center;
@@ -71,8 +74,8 @@ nav a{
     background-color:#FAD982;
 }
 .bttn img{
-     width: 22px;
-    height:22px;
+     width: 30px;
+    height:30px;
     border-radius: 14px;
     border: black;
 
@@ -83,14 +86,14 @@ nav a{
     border-radius: 14px;
     border: black;
 }
-.buttn button{
+.buttn .button3{
     display: flex;
     align-items:center;
     cursor: pointer;
     border-radius: 30px;
     padding: 4px 18px 8px 18px;
     background-color:#FAD982;
-    margin:3px;
+    margin:10px;
 
 
 }
@@ -114,6 +117,7 @@ nav a{
     flex-direction: row;
     display:flex;
     align-items: center;
+    gap:10px;
 }
 .logos{
     position: static;
@@ -122,8 +126,11 @@ nav a{
     gap:10px;
 }
 .logos img{
-    width:80px;
-    height:25px;
+     width:60px;
+    height:60px;
+    border-radius: 50%;
+    object-fit: cover;
+
 }
 .background-content{
      display: flex;
@@ -133,32 +140,43 @@ nav a{
     width: 100%;
     z-index: 1;
     margin-top: 200px;
+    margin-left:60px;
     color:white;
     position: relative;
 }
 h1{
     font-family: 'Playfair Display', serif;
-    font-weight: 400;
+    font-weight:lighter;
     font-size: 42px;
-    line-height: 1.05;
+    line-height: 1.25;
+    font-size: 50px;
     color: white;
+}
+h3{
+  font-family: 'Playfair Display', serif;  
+  font-size:32px;
+  color:white;
+  font-weight: lighter;
 }
 header{
 display: flex;
 justify-content:center;
+align-items:center;
 
 
 }
 .forms{
-    position: absolute;
-    flex-shrink: 0;
+     position: absolute;
     width: 350px;
     padding: 16px;
-    color:black;
+    color: black;
     background-color: white;
-    border-radius: 8%;
-    right: 40px;
-    bottom:22px;
+    border-radius: 12px;
+    left: 88%;
+    bottom: -22px;
+    right:40px;
+    transform: translateX(-50%);
+    z-index: 2;
 }
 .forms h2{
     text-align: center;
@@ -170,6 +188,7 @@ justify-content:center;
     font-family: inherit;
     width:150px;
     height:25px;
+    background-color: rgb(227, 227, 227);
 }
 .forms select{
     border: 1px solid #ccc;
@@ -177,6 +196,7 @@ justify-content:center;
     font-family: inherit;
     width:300px;
     height:25px;
+    background-color: rgb(227, 227, 227);
     
 }
 .forms textarea{
@@ -185,6 +205,7 @@ justify-content:center;
     font-family: inherit;
     width:300px;
     height:60px;
+    background-color: rgb(227, 227, 227);
 
 }
 .reviews {
@@ -194,7 +215,12 @@ justify-content:center;
     justify-content: center;
     gap: 10px;
 }
-
+.buttons .button1{
+    width:312px;
+    height:28px;
+    display:flex;
+    justify-content: center;
+}
 .ratings {
     display: flex;
     flex-direction: column;
@@ -256,7 +282,7 @@ justify-content:center;
     align-items: center;
 }
 .review-icons img {
-    margin-right: -8px;
+    margin-right: -12px;
     border: 2px solid white;
     position: relative;
 }
