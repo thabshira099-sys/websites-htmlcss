@@ -3,6 +3,13 @@
     padding:0;
     box-sizing: border-box;
 }
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 body{
 font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-size: 16px;
@@ -13,14 +20,17 @@ background-color:rgb(227, 227, 227);
 .background{
     position: relative;
     overflow: visible;
-    height: 730px;
-    margin: 20px;
+    height: calc(100vh - 50px);
+    margin:15px 18px;
+    border-radius: 24px;
 }
+
 .main{
-    position:relative;
-    top:12px;
-    left:15px;
-    width:100%;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    width: 100%;
+    padding: 0 15px;
     z-index: 1;
     
     
@@ -37,10 +47,12 @@ background-color:rgb(227, 227, 227);
 
 .profile1{
     width: 100%;
-    height:100%;
+    height: 100%;
     object-fit: cover;
     position: absolute;
-    border-radius: 22px;
+    top: 0;
+    left: 0;
+    border-radius: 36px;
 }
 nav{
     display:flex;
@@ -68,6 +80,7 @@ nav a{
 .bttn button{
     display: flex;
     align-items:center;
+    justify-content: center;
     cursor: pointer;
     border-radius: 30px;
     padding: 4px 18px 8px 18px;
@@ -107,6 +120,7 @@ nav a{
 .bttn .button3{
      display: flex;
     align-items:center;
+    justify-content: center;
     cursor: pointer;
     border-radius: 30px;
     padding: 4px 18px 8px 18px;
@@ -123,7 +137,7 @@ nav a{
     position: static;
     display: flex;
     align-items: center;
-    gap:10px;
+    /* gap:10px; */
 }
 .logos img{
      width:60px;
@@ -134,8 +148,7 @@ nav a{
 }
 .background-content{
      display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     gap: 30px;
     width: 100%;
     z-index: 1;
@@ -145,7 +158,7 @@ nav a{
     position: relative;
 }
 h1{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Times New Roman', serif;
     font-weight:lighter;
     font-size: 42px;
     line-height: 1.25;
@@ -166,16 +179,16 @@ align-items:center;
 
 }
 .forms{
-     position: absolute;
+    position: absolute;
     width: 350px;
     padding: 16px;
     color: black;
     background-color: white;
     border-radius: 12px;
-    left: 88%;
-    bottom: -22px;
-    right:40px;
-    transform: translateX(-50%);
+    right: 40px;
+    bottom: -28px;
+    left: auto;
+    transform: none;
     z-index: 2;
 }
 .forms h2{
@@ -224,50 +237,51 @@ align-items:center;
 .ratings {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 .ratings p{
     color:white;
-    margin:px;
+    margin:-6px;
+    font-size:12px;
 }
 .stars{
-    color: yellow;
+    color: gold;
     font-size:23px;
     margin:4px;
     
 }
 .facebook{
-    width:60px;
-    height:60px;
+    width:40px;
+    height:40px;
     border-radius: 50%;
     object-fit: cover;
 
 }
 .blue{
-    width:60px;
-    height:60px;
+    width:40px;
+    height:40px;
     border-radius: 50%;
     object-fit: cover;
 
 }
 .google{
-    width:60px;
-    height:60px;
+    width:40px;
+    height:40px;
     border-radius: 50%;
     object-fit: cover;
 
 }
 .red{
-    width:60px;
-    height:60px;
+    width:40px;
+    height:40px;
     border-radius: 50%;
     object-fit: cover;
 
 }
 .rate{
-    width:60px;
-    height:60px;
+    width:40px;
+    height:40px;
     border-radius: 50%;
     object-fit: cover;
 
@@ -276,13 +290,16 @@ align-items:center;
     display: flex;
     flex-direction: row;
     gap: 10px;
+    justify-content: flex-start;
+
 }
 .review-icons {
     display: flex;
     align-items: center;
+    
 }
 .review-icons img {
-    margin-right: -12px;
+    margin-right: -16px;
     border: 2px solid white;
     position: relative;
 }
