@@ -36,7 +36,7 @@ background-color:rgb(227, 227, 227);
     
 }
 .mains{
-    padding: 8px 28px;
+    padding: 4px 20px;
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.18);
     backdrop-filter: blur(20px);
@@ -66,78 +66,88 @@ nav a{
     flex-direction: column;
     text-decoration: none;
 }
-
-.buttons button{
+.buttons button,
+.bttn button {
     display: flex;
-    align-items:center;
-    cursor: pointer;
-    border-radius: 15px;
-    padding: 4px 18px 8px 18px;
-    background-color:#FAD982;
-
-
-}
-.bttn button{
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    cursor: pointer;
-    border-radius: 30px;
-    padding: 4px 18px 8px 18px;
-    background-color:#FAD982;
-}
-.bttn img{
-     width: 30px;
-    height:30px;
-    border-radius: 14px;
-    border: black;
-
-}
-.buttons img{
-    width: 22px;
-    height:22px;
-    border-radius: 14px;
-    border: black;
-}
-.buttn .button3{
-    display: flex;
-    align-items:center;
-    cursor: pointer;
-    border-radius: 30px;
-    padding: 4px 18px 8px 18px;
-    background-color:#FAD982;
-    margin:10px;
-
-
-}
-.buttn img{
-     width:22px;
-    height:22px;
-    border-radius: 14px;
-    border: black;
-
-}
-.bttn .button3{
-     display: flex;
-    align-items:center;
-    justify-content: center;
-    cursor: pointer;
-    border-radius: 30px;
-    padding: 4px 18px 8px 18px;
-    background-color:white;
-
-}
-.bttn{
-    flex-direction: row;
-    display:flex;
     align-items: center;
-    gap:10px;
+    justify-content: center;
+    gap: 2px;
+
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+    padding:16px;
 }
+.buttn button{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+    padding:12px;
+    margin-top: 6px;
+}
+
+
+.bttn .button2,
+.buttons .button1 {
+    background-color: #FAD982;
+}
+
+.bttn .button3 {
+    background-color: white;
+}
+
+
+.buttn .button3 {
+    background-color: #FAD982;
+}
+
+.bttn button img,
+.buttons button img {
+    width: 24px;
+    height: 24px;
+    object-fit:contain;
+    flex-shrink: 0;
+    display: block;
+}
+.buttn button img{
+     width: 25px;
+    height: 25px;
+    object-fit:contain;
+    flex-shrink: 0;
+    display: block;
+}
+
+.bttn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.buttons .button1 {
+    width: 100%;
+    min-height: 42px;
+}
+
 .logos{
     position: static;
     display: flex;
     align-items: center;
-    /* gap:10px; */
 }
 .logos img{
      width:60px;
@@ -170,6 +180,10 @@ h3{
   font-size:32px;
   color:white;
   font-weight: lighter;
+}
+h2{
+    font-size: larger;
+    display: flex;
 }
 header{
 display: flex;
@@ -237,7 +251,6 @@ align-items:center;
 .ratings {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 .ratings p{
@@ -289,7 +302,7 @@ align-items:center;
 .reviews{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
     justify-content: flex-start;
 
 }
@@ -299,7 +312,7 @@ align-items:center;
     
 }
 .review-icons img {
-    margin-right: -16px;
+    margin-right: -14px;
     border: 2px solid white;
     position: relative;
 }
