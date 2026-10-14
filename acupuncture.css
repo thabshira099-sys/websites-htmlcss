@@ -200,9 +200,9 @@ align-items:center;
     background-color: white;
     border-radius: 12px;
     right: 40px;
-    bottom: -28px;
-    left: auto;
-    transform: none;
+    bottom: -26px;
+    /* left: auto; */
+    /* transform: none; */
     z-index: 2;
 }
 .forms h2{
